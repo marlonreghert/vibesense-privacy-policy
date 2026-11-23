@@ -197,13 +197,13 @@
 
 <div class="meta">
   <span><strong>Data de vigência:</strong> 8 de julho de 2026</span>
-  <span><strong>Última atualização:</strong> 8 de julho de 2026</span>
+  <span><strong>Última atualização:</strong> 23 de novembro de 2026</span>
 </div>
 
 <hr>
 
 <h2><span class="num">1</span> Quem Somos</h2>
-<p>O VibeSense é operado pela <strong>VIBESENSE TECNOLOGIA LTDA</strong> ("nós", "nosso" ou "nos"), com sede no Brasil. Esta política explica como coletamos, usamos e protegemos seus dados pessoais quando você utiliza o aplicativo VibeSense ("App").</p>
+<p>O VibeSense é operado pela <strong>VIBESENSE TECNOLOGIA LTDA</strong> ("nós", "nosso" ou "nos"), com sede no Brasil. Esta política explica como coletamos, usamos e protegemos seus dados pessoais quando você utiliza o aplicativo VibeSense ("App") ou o site vibesense.live ("Site").</p>
 <p>Dúvidas ou solicitações? Entre em contato pelo e-mail <strong>admin@vibesense.live</strong>.</p>
 
 <hr>
@@ -264,6 +264,16 @@
   <li>Não rastreamos você em outros aplicativos ou sites.</li>
 </ul>
 
+<h3>2.4 Site vibesense.live</h3>
+<p>O Site pode ser usado sem login e não coleta dados de conta. Ao usar o Site:</p>
+<ul>
+  <li><strong>Registros de acesso:</strong> nosso servidor registra automaticamente cada acesso: data e hora, o endereço da página visitada, incluindo os parâmetros do endereço (que podem conter o texto de uma busca feita no Site, o texto de uma pergunta levada da busca para a VibeIA e parâmetros de campanha, como <code>utm_source</code>), a página de origem que levou você até ela e o tipo de navegador ou dispositivo (User-Agent). Seu endereço IP é usado apenas para entregar as páginas a você: ele não é gravado nesses registros, que também não contêm dados de conta. Eles servem para manter o serviço seguro, corrigir erros e medir o uso do Site de forma agregada, e não são usados para publicidade.</li>
+  <li><strong>Link de download (<code>/baixar</code>):</strong> quando você abre o link ou o QR code de download do App, gravamos no seu navegador um cookie (<code>vs_qr</code>) com um identificador aleatório, válido por 12 meses. Ele serve apenas para contar acessos novos e repetidos a esse link e não é associado ao seu nome, e-mail, conta ou endereço IP. Você pode bloquear ou apagar esse cookie nas configurações do navegador; o link de download continua funcionando sem ele.</li>
+  <li><strong>Buscas recentes e localização:</strong> suas buscas recentes ficam guardadas apenas no seu navegador. Se você permitir o acesso à sua localização, ela permanece no seu navegador: não é enviada aos nossos servidores nem armazenada por nós.</li>
+  <li><strong>VibeIA no Site:</strong> quando disponível, as perguntas enviadas à VibeIA pelo Site, junto com o histórico da conversa em andamento, são tratadas da mesma forma que no App (seções 3, 5 e 6).</li>
+  <li><strong>Limite de uso da VibeIA:</strong> para evitar abuso, contamos as perguntas por endereço IP, no Site e no App, e podemos limitá-las. Para isso, guardamos apenas um código derivado do IP (hash), por no máximo 48 horas. Uma versão parcial do endereço (sem o trecho final) pode aparecer em registros técnicos, guardados por até 30 dias.</li>
+</ul>
+
 <hr>
 
 <h2><span class="num">3</span> Como Usamos Seus Dados</h2>
@@ -271,7 +281,7 @@
 <ul>
   <li><strong>Descoberta de locais:</strong> sua localização é enviada aos nossos servidores para retornar locais próximos e seus níveis de movimento em tempo real.</li>
   <li><strong>Gerenciamento de conta:</strong> seu e-mail e Firebase UID são usados para autenticá-lo e manter seus favoritos sincronizados.</li>
-  <li><strong>Assistente com IA:</strong> as mensagens enviadas ao chat do app são processadas pelo nosso backend (que utiliza a API da OpenAI) para gerar sugestões de locais. Não armazenamos mensagens de chat permanentemente.</li>
+  <li><strong>Assistente com IA:</strong> as mensagens enviadas ao chat do app são processadas pelo nosso backend (que utiliza a API da OpenAI) para gerar sugestões de locais. Não armazenamos mensagens de chat permanentemente; apenas o trecho inicial de cada pergunta (até 120 caracteres) fica em registros técnicos por até 30 dias, para diagnosticar erros e prevenir abuso.</li>
   <li><strong>Melhoria do serviço:</strong> padrões de uso agregados e anonimizados nos ajudam a aprimorar as recomendações e expandir para novas cidades.</li>
 </ul>
 <p>Não usamos seus dados para publicidade, criação de perfis ou qualquer finalidade não relacionada à função principal do App.</p>
@@ -302,6 +312,18 @@
       <td>Mensagens do chat com IA</td>
       <td>Execução de contrato / interesse legítimo</td>
     </tr>
+    <tr>
+      <td>Registros de acesso do Site (segurança, correção de erros e medição agregada de uso)</td>
+      <td>Interesse legítimo</td>
+    </tr>
+    <tr>
+      <td>Cookie <code>vs_qr</code> do link de download (contagem de acessos novos e repetidos)</td>
+      <td>Interesse legítimo</td>
+    </tr>
+    <tr>
+      <td>Limite de uso da VibeIA por endereço IP (prevenção de abuso)</td>
+      <td>Interesse legítimo</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -309,7 +331,7 @@
 <hr>
 
 <h2><span class="num">5</span> Com Quem Compartilhamos Seus Dados</h2>
-<p>Compartilhamos dados apenas com os prestadores de serviço estritamente necessários para operar o App:</p>
+<p>Compartilhamos dados apenas com os prestadores de serviço estritamente necessários para operar o App e o Site:</p>
 <div class="table-wrap">
 <table>
   <thead>
@@ -328,13 +350,13 @@
     </tr>
     <tr>
       <td><strong>Amazon Web Services (AWS)</strong></td>
-      <td>Hospedagem em nuvem da nossa API e banco de dados (região Brasil quando disponível)</td>
-      <td>Todos os dados do app</td>
+      <td>Hospedagem em nuvem da nossa API e banco de dados (região Brasil quando disponível); hospedagem e distribuição do Site (CDN)</td>
+      <td>Todos os dados do app; registros de acesso do Site e do link de download</td>
     </tr>
     <tr>
       <td><strong>OpenAI</strong></td>
       <td>Respostas do chat com IA</td>
-      <td>Conteúdo das mensagens do chat (nome ou e-mail não são enviados)</td>
+      <td>Conteúdo das mensagens do chat e, no App, a distância de cada local sugerido até a sua posição (nome, e-mail ou coordenadas não são enviados). Segundo a política da OpenAI para sua API, esse conteúdo pode ser mantido por até 30 dias para monitoramento de abuso e não é usado para treinar modelos.</td>
     </tr>
   </tbody>
 </table>
@@ -365,11 +387,23 @@
     </tr>
     <tr>
       <td>Mensagens do chat com IA</td>
-      <td>Não armazenadas permanentemente — processadas em tempo real</td>
+      <td>Não armazenadas permanentemente — processadas em tempo real. O trecho inicial de cada pergunta (até 120 caracteres) fica em registros técnicos por até 30 dias</td>
     </tr>
     <tr>
       <td>Análises agregadas</td>
       <td>Indefinidamente (sem identificadores pessoais)</td>
+    </tr>
+    <tr>
+      <td>Registros de acesso do Site</td>
+      <td>Até 90 dias; os que contêm parâmetros do endereço e página de origem, 30 dias</td>
+    </tr>
+    <tr>
+      <td>Registros do link de download (<code>/baixar</code>)</td>
+      <td>400 dias; o cookie <code>vs_qr</code> expira em 12 meses</td>
+    </tr>
+    <tr>
+      <td>Limite de uso da VibeIA (código derivado do endereço IP)</td>
+      <td>Até 48 horas; a versão parcial do endereço em registros técnicos, até 30 dias</td>
     </tr>
   </tbody>
 </table>

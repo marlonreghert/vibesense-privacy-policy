@@ -23,13 +23,13 @@
 
   <p>
     <strong>Effective date:</strong> July 8, 2026<br>
-    <strong>Last updated:</strong> July 8, 2026
+    <strong>Last updated:</strong> November 23, 2026
   </p>
 
   <hr>
 
   <h2>1. Who We Are</h2>
-  <p>VibeSense is operated by <strong>VIBESENSE TECNOLOGIA LTDA</strong> ("we", "our", or "us"), based in Brazil. This policy explains how we collect, use, and protect your personal data when you use the VibeSense mobile app ("App").</p>
+  <p>VibeSense is operated by <strong>VIBESENSE TECNOLOGIA LTDA</strong> ("we", "our", or "us"), based in Brazil. This policy explains how we collect, use, and protect your personal data when you use the VibeSense mobile app ("App") or the vibesense.live website ("Site").</p>
   <p>Questions or requests? Contact us at <strong>admin@vibesense.live</strong>.</p>
 
   <hr>
@@ -92,6 +92,16 @@
     <li>We do not track you across other apps or websites.</li>
   </ul>
 
+  <h3>2.4 The vibesense.live website</h3>
+  <p>The Site can be used without signing in and collects no account data. When you use the Site:</p>
+  <ul>
+    <li><strong>Access logs:</strong> our server automatically records each request: date and time, the address of the page visited, including its query parameters (which may contain the text of a search made on the Site, the text of a question carried from the search to VibeIA, and campaign parameters such as <code>utm_source</code>), the referring page, and the browser or device type (User-Agent). Your IP address is used only to deliver the pages to you: it is not written to these logs, which contain no account data either. We use them to keep the service secure, fix errors and measure aggregate use of the Site, and never for advertising.</li>
+    <li><strong>Download link (<code>/baixar</code>):</strong> when you open the App download link or QR code, we store a cookie (<code>vs_qr</code>) in your browser with a random identifier, valid for 12 months. It is used only to count new and repeat visits to that link and is not associated with your name, e-mail, account or IP address. You can block or delete this cookie in your browser settings; the download link keeps working without it.</li>
+    <li><strong>Recent searches and location:</strong> your recent searches are kept only in your browser. If you allow access to your location, it stays in your browser: it is not sent to our servers or stored by us.</li>
+    <li><strong>VibeIA on the Site:</strong> where available, questions sent to VibeIA through the Site, together with the history of the ongoing conversation, are handled the same way as in the App (sections 3, 5 and 6).</li>
+    <li><strong>VibeIA usage limit:</strong> to prevent abuse, we count questions per IP address, on the Site and in the App, and may limit them. For this, we keep only a code derived from the IP (a hash), for at most 48 hours. A partial version of the address (without its final part) may appear in technical logs, which are kept for up to 30 days.</li>
+  </ul>
+
   <hr>
 
   <h2>3. How We Use Your Data</h2>
@@ -99,7 +109,7 @@
   <ul>
     <li><strong>Venue discovery:</strong> Your location is sent to our servers to return nearby venues and their current busyness levels.</li>
     <li><strong>Account management:</strong> Your email and Firebase UID are used to authenticate you and keep your favorites synced.</li>
-    <li><strong>AI assistant:</strong> Messages you send to the in-app chat are processed by our backend (which uses OpenAI's API) to generate venue suggestions. We do not store chat messages permanently.</li>
+    <li><strong>AI assistant:</strong> Messages you send to the in-app chat are processed by our backend (which uses OpenAI's API) to generate venue suggestions. We do not store chat messages permanently; only the first part of each question (up to 120 characters) is kept in technical logs for up to 30 days, to diagnose errors and prevent abuse.</li>
     <li><strong>Service improvement:</strong> Aggregated, anonymized usage patterns help us improve recommendations and expand to new cities.</li>
   </ul>
   <p>We do not use your data for advertising, profiling, or any purpose unrelated to the App's core function.</p>
@@ -132,13 +142,25 @@
         <td>AI chat messages</td>
         <td>Execution of a contract / legitimate interest</td>
       </tr>
+      <tr>
+        <td>Site access logs (security, error fixing and aggregate usage measurement)</td>
+        <td>Legitimate interest</td>
+      </tr>
+      <tr>
+        <td><code>vs_qr</code> cookie on the download link (counting new and repeat visits)</td>
+        <td>Legitimate interest</td>
+      </tr>
+      <tr>
+        <td>VibeIA usage limit per IP address (abuse prevention)</td>
+        <td>Legitimate interest</td>
+      </tr>
     </tbody>
   </table>
 
   <hr>
 
   <h2>5. Who We Share Your Data With</h2>
-  <p>We share data only with the service providers strictly necessary to operate the App:</p>
+  <p>We share data only with the service providers strictly necessary to operate the App and the Site:</p>
   <table>
     <thead>
       <tr>
@@ -160,13 +182,13 @@
       </tr>
       <tr>
         <td><strong>Amazon Web Services (AWS)</strong></td>
-        <td>Cloud hosting of our API and database (Brazil region where available)</td>
-        <td>All app data</td>
+        <td>Cloud hosting of our API and database (Brazil region where available); hosting and delivery of the Site (CDN)</td>
+        <td>All app data; access logs of the Site and of the download link</td>
       </tr>
       <tr>
         <td><strong>OpenAI</strong></td>
         <td>AI chat responses</td>
-        <td>Chat message content (no name or email sent)</td>
+        <td>Chat message content and, in the App, the distance from each suggested venue to your position (no name, email or coordinates are sent). Under OpenAI's API policy, this content may be kept for up to 30 days for abuse monitoring and is not used to train models.</td>
       </tr>
     </tbody>
   </table>
@@ -198,11 +220,23 @@
       </tr>
       <tr>
         <td>AI chat messages</td>
-        <td>Not stored persistently — processed in real time</td>
+        <td>Not stored persistently — processed in real time. The first part of each question (up to 120 characters) is kept in technical logs for up to 30 days</td>
       </tr>
       <tr>
         <td>Aggregated analytics</td>
         <td>Indefinitely (no personal identifiers)</td>
+      </tr>
+      <tr>
+        <td>Site access logs</td>
+        <td>Up to 90 days; those containing query parameters and the referring page, 30 days</td>
+      </tr>
+      <tr>
+        <td>Download link (<code>/baixar</code>) records</td>
+        <td>400 days; the <code>vs_qr</code> cookie expires after 12 months</td>
+      </tr>
+      <tr>
+        <td>VibeIA usage limit (code derived from the IP address)</td>
+        <td>Up to 48 hours; the partial version of the address in technical logs, up to 30 days</td>
       </tr>
     </tbody>
   </table>
